@@ -14,7 +14,7 @@ for (let i = 0; i < rank.length; i++) {
   }
 
 function deepestChild() {
-  var current = document.querySelector(`div#grand-node`)
+  var current = document.querySelectorAll(`div#grand-node`)
   var next = []
   while (current) {
     if (querySelector(current) === false) {
