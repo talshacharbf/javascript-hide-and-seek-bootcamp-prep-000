@@ -17,10 +17,11 @@ function deepestChild() {
   var current = document.querySelectorAll(`div#grand-node`)
   var next = []
   while (current) {
-    if (document.querySelector(current)) { {
+    if (document.querySelector(current)) {
       for (let i =0; i < currentl.length; i++) {
         next.push(current[i])
       }
+      return current
     }
 current = next.shift()
   }
