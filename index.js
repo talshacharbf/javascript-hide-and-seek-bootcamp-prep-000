@@ -16,13 +16,10 @@ for (let i = 0; i < rank.length; i++) {
 function deepestChild() {
   var current = document.querySelectorAll(`div#grand-node`)
   var next = []
-  while (current) {
-    if (document.querySelectorAll(current)) {
-      for (let i =0; i < currentl.length; i++) {
+  if (document.querySelectorAll(current)) {
+    for (let i =0; i < currentl.length; i++) {
         next.push(current[i])
-      }
-      }
-    current = next.shift()
+    current = next.shift()}
     return current
     }
   return null
