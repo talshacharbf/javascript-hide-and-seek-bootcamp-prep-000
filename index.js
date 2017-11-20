@@ -17,7 +17,7 @@ function deepestChild() {
   var current = document.querySelectorAll(`div#grand-node`)
   var next = []
   while (current) {
-    if (document.querySelector(current) === true) {
+    if (document.querySelector(current) === false) {
       return current
     }
     if (current.isarray(current)) {
