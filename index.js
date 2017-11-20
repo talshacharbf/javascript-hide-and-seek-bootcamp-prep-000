@@ -14,13 +14,12 @@ for (let i = 0; i < rank.length; i++) {
   }
 
 function deepestChild() {
-  var current = document.querySelectorAll(`div#grand-node`)
-  var next = []
-  if (document.querySelectorAll(current)) {
-    for (let i =0; i < currentl.length; i++) {
-        next.push(current[i])
-    current = next.shift()}
-    return current
+  let current = document.getElementById('grand-node')
+    let next = current.children[0]
+
+    while (next) {
+      current = next
+      next = current.children[0]
     }
-  return null
-}
+    return current
+  }
