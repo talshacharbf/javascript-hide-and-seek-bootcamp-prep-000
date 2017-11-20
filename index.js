@@ -28,4 +28,3 @@ current = next.shift()
   return null
 
 }
-}
