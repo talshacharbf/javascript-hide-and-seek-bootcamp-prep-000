@@ -21,8 +21,8 @@ function deepestChild() {
       for (let i =0; i < currentl.length; i++) {
         next.push(current[i])
       }
+      }
       return current
-    }
 current = next.shift()
   }
   return null
